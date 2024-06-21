@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Linux kernel headers
+      - name: Install Linux kernel headers
         run: sudo apt-get install -y linux-headers-$(uname -r)
 
       - name: Install build dependencies
